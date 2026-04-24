@@ -1,0 +1,42 @@
+{
+  "agents": [
+    {
+      "agent_id": "ab69fcc183ccce207",
+      "agent_type": "site-architect",
+      "started_at": "2026-04-23T23:27:24.897Z",
+      "parent_mode": "none",
+      "status": "running"
+    },
+    {
+      "agent_id": "ad67f8e1334fa21bf",
+      "agent_type": "frontend-developer",
+      "started_at": "2026-04-24T01:32:47.706Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-04-24T01:37:09.528Z",
+      "duration_ms": 261822
+    },
+    {
+      "agent_id": "a4d63fee1e3153317",
+      "agent_type": "content-writer",
+      "started_at": "2026-04-24T01:33:05.892Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-04-24T01:35:21.705Z",
+      "duration_ms": 135813
+    },
+    {
+      "agent_id": "aa25d53ae6377d6f4",
+      "agent_type": "Explore",
+      "started_at": "2026-04-24T01:47:30.033Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-04-24T01:48:26.758Z",
+      "duration_ms": 56725
+    }
+  ],
+  "total_spawned": 4,
+  "total_completed": 3,
+  "total_failed": 0,
+  "last_updated": "2026-04-24T01:56:25.506Z"
+}

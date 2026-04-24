@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Paul Kim — Biomedical Engineering Student. Bioprinting, organoids, and microfluidics.">
+  <title>Paul Kim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- NAV — appears on scroll -->
+  <nav id="navbar" class="nav" aria-label="Site navigation">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__home">Paul Kim</a>
+      <ul class="nav__links">
+        <li><a href="#about"     class="nav__link">About</a></li>
+        <li><a href="#research"  class="nav__link">Research</a></li>
+        <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+        <li><a href="#skills"    class="nav__link">Skills</a></li>
+        <li><a href="#contact"   class="nav__link">Contact</a></li>
+      </ul>
+      <button id="nav-toggle" class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile drawer -->
+    <ul id="nav-drawer" class="nav__drawer" hidden>
+      <li><a href="#about"     class="nav__link">About</a></li>
+      <li><a href="#research"  class="nav__link">Research</a></li>
+      <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+      <li><a href="#skills"    class="nav__link">Skills</a></li>
+      <li><a href="#contact"   class="nav__link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════════════ HERO / CARD ══════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="card" role="banner">
+      <div class="card__rule"></div>
+
+      <div class="card__eyebrow">
+        <span>Biomedical Engineering</span>
+      </div>
+
+      <div class="card__rule"></div>
+
+      <div class="card__main">
+        <p class="card__pre">—</p>
+        <h1 class="card__name">Paul Kim</h1>
+        <p class="card__title">Biomedical Engineering Student</p>
+        <p class="card__focus">Bioprinting &thinsp;&middot;&thinsp; Organoids &thinsp;&middot;&thinsp; Microfluidics</p>
+      </div>
+
+      <div class="card__rule"></div>
+
+      <div class="card__contact">
+        <a href="mailto:paulkim0724@gmail.com" class="card__contact-item">paulkim0724@gmail.com</a>
+        <span class="card__sep" aria-hidden="true">&middot;</span>
+        <a href="https://github.com/sungminnkimm" class="card__contact-item" target="_blank" rel="noopener"><!-- TODO: add your GitHub URL -->GitHub</a>
+        <span class="card__sep" aria-hidden="true">&middot;</span>
+        <a href="https://www.linkedin.com/in/paul-sungmin-kim/" class="card__contact-item"><!-- TODO: add LinkedIn URL -->LinkedIn</a>
+      </div>
+
+      <div class="card__rule"></div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="hero__scroll-label">Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- ═══════════════════════════ ABOUT ══════════════════════════ -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__num">01</p>
+          <h2 class="section__title">About</h2>
+          <div class="section__rule"></div>
+        </header>
+
+        <div class="about__layout">
+          <div class="about__portrait">
+            <img src="images/profile.JPG" alt="Paul Kim — photo placeholder" class="about__img">
+          </div>
+          <div class="about__body">
+            <p class="about__lead">I'm a biomedical engineering student captivated by the idea that we can print living tissue — not as science fiction, but as a solvable engineering problem.</p>
+            <p class="about__text">My work sits at the crossroads of biology, control systems, and hardware design, where I get to ask questions that don't have clean answers yet. What draws me to this field is the full-stack nature of it: understanding cell biology deeply enough to design around it, then building the physical systems that make precision possible.</p>
+            <ul class="about__pillars">
+              <li><span class="pillar__mark">—</span> Bioprinting &amp; tissue engineering</li>
+              <li><span class="pillar__mark">—</span> Control systems for biological hardware</li>
+              <li><span class="pillar__mark">—</span> Accessible, low-cost lab instrumentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════ RESEARCH ══════════════════════════ -->
+    <section id="research" class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__num">02</p>
+          <h2 class="section__title">Research</h2>
+          <div class="section__rule"></div>
+        </header>
+
+        <p class="section__intro">I approach bioprinting as a control engineering problem — one where the biology sets the constraints and the engineering provides the levers. My interests center on making bioprinting more precise, more accessible, and more biologically faithful.</p>
+
+        <div class="research__grid">
+
+          <article class="research__item research__item--primary">
+            <div class="research__item-inner">
+              <p class="research__label">Primary Focus</p>
+              <h3 class="research__name">Control Engineering<br>for Bioprinting</h3>
+              <div class="thin-rule"></div>
+              <p class="research__desc">Extrusion-based bioprinting is only as good as its consistency. Small variations in flow rate, nozzle pressure, or temperature can compromise cell viability and structural fidelity. My focus is applying closed-loop feedback control — PID controllers, real-time sensor integration, adaptive parameter tuning — to regulate extrusion dynamics and produce repeatable, cell-friendly output.</p>
+              <ul class="research__tags">
+                <li>Closed-loop control</li>
+                <li>PID</li>
+                <li>Extrusion dynamics</li>
+                <li>Sensor integration</li>
+              </ul>
+            </div>
+          </article>
+
+          <div class="research__divider" aria-hidden="true"></div>
+
+          <article class="research__item">
+            <div class="research__item-inner">
+              <p class="research__label">Secondary Interest</p>
+              <h3 class="research__name">Cornea<br>Bioprinting</h3>
+              <div class="thin-rule"></div>
+              <p class="research__desc">The cornea's highly organized, anisotropic collagen fiber structure and requirement for optical transparency make it one of the most technically demanding targets in tissue engineering. I'm drawn to recreating stromal architecture with sufficient fidelity for light transmission — and by the clinical urgency of global corneal transplant shortages.</p>
+              <ul class="research__tags">
+                <li>Corneal stroma</li>
+                <li>Collagen alignment</li>
+                <li>Keratocytes</li>
+                <li>Tissue engineering</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+
+        <footer class="research__note">
+          <span class="research__note-label">Currently exploring —</span>
+          Low-shear bioink rheology and real-time extrusion monitoring approaches.
+        </footer>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ PORTFOLIO ══════════════════════════ -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__num">03</p>
+          <h2 class="section__title">Portfolio</h2>
+          <div class="section__rule"></div>
+        </header>
+
+        <article class="project project--featured">
+          <div class="project__meta">
+            <span class="project__status">Upcoming — Summer 2026</span>
+            <span class="project__num">P.01</span>
+          </div>
+          <div class="thin-rule"></div>
+          <div class="project__body">
+            <h3 class="project__name">Low-Cost Low-Shear<br>Extrusion System</h3>
+            <p class="project__desc">Extrusion-based bioprinters subject cells to significant mechanical shear as bioink is forced through narrow nozzles — stress that compromises membrane integrity and reduces post-print viability. Commercial solutions that address this are expensive and inaccessible to most research labs. This project aims to design and build a low-cost extrusion system that minimizes shear stress through careful nozzle geometry and pressure control, making cell-friendly bioprinting accessible without a large equipment budget.</p>
+            <ul class="project__tags">
+              <li>Bioprinting</li>
+              <li>Hardware design</li>
+              <li>Extrusion mechanics</li>
+              <li>Shear stress</li>
+              <li>Cell viability</li>
+            </ul>
+          </div>
+          <div class="thin-rule"></div>
+          <p class="project__cta">Details to follow</p>
+        </article>
+
+        <div class="project-list">
+          <div class="project-list__item">
+            <span class="project-list__num">P.02</span>
+            <span class="project-list__title">More projects in development</span>
+            <span class="project-list__status">Coming soon</span>
+          </div>
+          <div class="project-list__item">
+            <span class="project-list__num">P.03</span>
+            <span class="project-list__title">More projects in development</span>
+            <span class="project-list__status">Coming soon</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ SKILLS ═════════════════════════════ -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__num">04</p>
+          <h2 class="section__title">Skills</h2>
+          <div class="section__rule"></div>
+        </header>
+
+        <div class="skills__layout">
+          <div class="skill-col">
+            <h3 class="skill-col__heading">Biomedical Engineering</h3>
+            <ul class="skill-col__list">
+              <li>Tissue engineering</li>
+              <li>Cell culture</li>
+              <li>Bioink formulation</li>
+              <li>Biomaterials</li>
+              <li>Organoid culture</li>
+              <li>Microfluidics</li>
+              <li>Lab-on-chip design</li>
+              <li>Extrusion bioprinting</li>
+            </ul>
+          </div>
+          <div class="skill-col__divider" aria-hidden="true"></div>
+          <div class="skill-col">
+            <h3 class="skill-col__heading">Research</h3>
+            <ul class="skill-col__list">
+              <li>Experimental design</li>
+              <li>Literature review</li>
+              <li>Data analysis</li>
+              <li>Scientific writing</li>
+              <li>Protocol development</li>
+            </ul>
+          </div>
+          <div class="skill-col__divider" aria-hidden="true"></div>
+          <div class="skill-col">
+            <h3 class="skill-col__heading">Technical</h3>
+            <ul class="skill-col__list">
+              <li>Control systems (PID)</li>
+              <li>CAD / 3D modeling</li>
+              <li>Python</li>
+              <li>MATLAB</li>
+              <li>Arduino</li>
+              <li>Microscopy</li>
+              <li>ImageJ</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═════════════════════════ CONTACT ══════════════════════════ -->
+  <footer id="contact" class="contact">
+    <div class="container contact__container">
+
+      <header class="section__header">
+        <p class="section__num">05</p>
+        <h2 class="section__title section__title--light">Contact</h2>
+        <div class="section__rule section__rule--light"></div>
+      </header>
+
+      <p class="contact__lead">I'd love to connect — whether you're a researcher, a collaborator, or just curious about what's possible at the edge of biology and engineering.</p>
+
+      <div class="contact__card">
+        <div class="card__rule card__rule--light"></div>
+        <div class="contact__details">
+          <div class="contact__item">
+            <span class="contact__label">Email</span>
+            <a href="mailto:paulkim0724@gmail.com" class="contact__value">paulkim0724@gmail.com</a>
+          </div>
+          <div class="contact__item">
+            <span class="contact__label">GitHub</span>
+            <a href="https://github.com/sungminnkimm" class="contact__value" target="_blank" rel="noopener">github.com/<!-- TODO: username --></a>
+          </div>
+          <div class="contact__item">
+            <span class="contact__label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/paul-sungmin-kim/" class="contact__value"><!-- TODO: LinkedIn URL -->linkedin.com/in/</a>
+          </div>
+        </div>
+        <div class="card__rule card__rule--light"></div>
+      </div>
+
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> Paul Kim</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
